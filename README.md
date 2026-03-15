@@ -1,120 +1,143 @@
 # Cosmetics Sales Data Analysis using Apache Spark
-Overview
 
-This project analyzes cosmetics sales data using Apache Spark to uncover purchasing trends, product performance, and revenue patterns. The goal was to simulate how large-scale retail datasets can be processed using distributed data processing tools.
+## Project Overview
 
-The analysis focuses on data cleaning, transformation, and exploratory analysis to extract insights that could help businesses optimize product strategy and sales performance.
+This project analyzes cosmetics sales data using **Apache Spark (PySpark)** to explore product performance, customer purchase patterns, and pricing trends. The objective was to simulate a real-world data analytics workflow involving **data cleaning, transformation, exploratory analysis, and visualization** on a retail dataset.
 
-Dataset
+The project demonstrates how large datasets can be processed efficiently using distributed computing frameworks.
 
-The dataset contains transactional sales data from a cosmetics company, including information such as:
+---
 
-Product category
+## Objectives
 
-Brand
+* Clean and preprocess raw sales data
+* Perform large-scale data processing using Apache Spark
+* Identify sales patterns across product categories and brands
+* Analyze price distributions and purchasing behavior
+* Generate insights that could support data-driven business decisions
 
-Price
+---
 
-Customer interaction data
+## Dataset Description
 
-Purchase events
+The dataset contains transactional information from a cosmetics retail platform, including attributes such as:
 
-The raw dataset required preprocessing to handle inconsistencies and prepare it for analysis.
+* Product category
+* Brand
+* Product price
+* Event type (view, cart, purchase)
+* Timestamp of customer interaction
 
-Technologies Used
+Before analysis, the dataset required preprocessing to remove inconsistencies and prepare it for structured analysis.
 
-Apache Spark (PySpark) – large-scale data processing
+---
 
-Python – data manipulation and analysis
+## Tools and Technologies
 
-Pandas / NumPy – data preprocessing
+* **Apache Spark (PySpark)** – distributed data processing
+* **Python** – data analysis and scripting
+* **Pandas & NumPy** – data preprocessing
+* **Matplotlib & Seaborn** – data visualization
+* **Jupyter Notebook / Google Colab** – analysis environment
 
-Matplotlib / Seaborn – visualization
+---
 
-Jupyter Notebook – experiment environment
+## Project Workflow
 
-Project Workflow
-1. Data Cleaning
+### 1. Data Cleaning
 
-Initial preprocessing included:
+The raw dataset was processed to:
 
-Removing missing and inconsistent values
+* Handle missing or inconsistent values
+* Standardize column formats
+* Prepare the data for Spark processing
 
-Standardizing column formats
+### 2. Spark Environment Setup
 
-Preparing the dataset for Spark processing
+A Spark session was initialized to enable distributed data processing and efficient handling of large datasets.
 
-2. Spark Environment Setup
-
-A Spark session was initialized to enable distributed processing of the dataset.
-
-3. Data Transformation
+### 3. Data Transformation
 
 Key transformations included:
 
-Filtering relevant purchase events
+* Filtering relevant event types
+* Aggregating sales data by product and category
+* Structuring the dataset for analytical queries
 
-Aggregating sales by product and category
+### 4. Exploratory Data Analysis (EDA)
 
-Preparing structured datasets for analysis
+EDA was performed to understand:
 
-4. Exploratory Data Analysis
+* Sales distribution across product categories
+* Brand-level product performance
+* Price distribution patterns
+* Customer purchase trends
 
-The analysis focused on identifying:
+### 5. Visualization
 
-Top-performing cosmetic product categories
+Data visualizations were created to highlight patterns and trends within the dataset and improve interpretability of results.
 
-Brand-wise sales distribution
+---
 
-Price distribution patterns
+## Key Insights
 
-Customer purchasing behavior trends
+Some notable insights from the analysis include:
 
-5. Visualization
+* Certain cosmetic categories consistently generate higher purchase activity.
+* Brand-level performance varies significantly across product segments.
+* Price distribution analysis reveals distinct purchasing patterns among customers.
 
-Data visualizations were created to highlight patterns and trends in the dataset, helping interpret the results more effectively.
+These insights could support **inventory planning, pricing strategies, and marketing decisions** in retail environments.
 
-Key Insights
+---
 
-Some insights extracted from the analysis include:
+## Repository Structure
 
-Certain cosmetic categories consistently drive higher purchase activity.
-
-Price segmentation reveals distinct purchasing behavior patterns.
-
-Brand-level analysis highlights which brands dominate sales within specific categories.
-
-These insights can support inventory planning, marketing strategy, and product positioning.
-
-Repository Structure
+```
 Cosmetics-Sales-Analysis
 │
 ├── Cosmetics_Inc_Sales_Data_Analysis_using_Apache_Spark.ipynb
-├── Data_for_Cleaning.csv
+├── Cosmetics Inc. - Data for Cleaning - Sheet1.csv
 └── README.md
-How to Run
+```
 
-Clone the repository
+---
 
-git clone https://github.com/your-username/your-repository.git
+## How to Run the Project
 
-Install dependencies
+### 1. Clone the repository
 
+```
+git clone https://github.com/your-username/your-repository-name.git
+```
+
+### 2. Install required libraries
+
+```
 pip install pyspark pandas numpy matplotlib seaborn
+```
 
-Run the notebook in Jupyter or Google Colab.
+### 3. Run the notebook
 
-Future Improvements
+Open the notebook in **Jupyter Notebook or Google Colab** and execute the cells to reproduce the analysis.
 
-Potential extensions for this project include:
+---
 
-Building predictive models for sales forecasting
+## Future Improvements
 
-Implementing recommendation systems for cosmetic products
+Possible extensions for this project include:
 
-Deploying the analysis pipeline using cloud-based Spark environments
+* Building machine learning models for sales prediction
+* Implementing product recommendation systems
+* Deploying Spark pipelines on cloud platforms
+* Integrating real-time sales data processing
 
-Author
+---
 
-Ritika Bobhate
-Data Analytics | Machine Learning | Distributed Data Processing
+## Author
+
+**Ritika Bobhate**
+
+Final-year Engineering Student
+Data Analytics | Machine Learning | Big Data Analytics
+
